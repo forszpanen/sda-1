@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="introduction-to-java" />
         <module name="introduction-to-jvm" />
+        <module name="java-intermediate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="introduction-to-java" target="1.5" />
-      <module name="introduction-to-jvm" target="1.5" />
-      <module name="sda" target="1.5" />
+      <module name="introduction-to-java" target="1.8" />
+      <module name="introduction-to-jvm" target="1.8" />
+      <module name="java-intermediate" target="1.8" />
+      <module name="sda" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
