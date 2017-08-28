@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/introduction-to-jvm/introduction-to-jvm.iml" filepath="$PROJECT_DIR$/introduction-to-jvm/introduction-to-jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-intermediate/java-intermediate.iml" filepath="$PROJECT_DIR$/java-intermediate/java-intermediate.iml" />
       <module fileurl="file://$PROJECT_DIR$/sda.iml" filepath="$PROJECT_DIR$/sda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tdd/tdd.iml" filepath="$PROJECT_DIR$/tdd/tdd.iml" />
     </modules>
   </component>
 </project>
