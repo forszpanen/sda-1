@@ -2,18 +2,21 @@ package pl.sda.poznan.singleton;
 
 import pl.sda.poznan.phone.MobilePhone;
 
-public class SingleObject {
+public class LazySingleton {
+    private static MobilePhone instance;
 
-    private static MobilePhone instance = new MobilePhone();
 
-
-    private SingleObject(){}
+    private LazySingleton(){}
 
     public static MobilePhone getInstance(){
+        if(instance == null){
+            instance = new MobilePhone();
+        }
         return instance;
     }
 
     public void showMessage(){
         System.out.println("Hello World!");
     }
+
 }
