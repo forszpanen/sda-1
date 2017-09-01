@@ -14,6 +14,7 @@
         <module>introduction-to-java</module>
         <module>java-intermediate</module>
         <module>tdd</module>
+        <module>design-patterns</module>
     </modules>
 
     <dependencies>
