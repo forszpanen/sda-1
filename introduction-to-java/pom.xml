@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>sda-parent</groupId>
-    <artifactId>sda-parent</artifactId>
+    <groupId>introduction-to-java</groupId>
+    <artifactId>introduction-to-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
