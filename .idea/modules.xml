@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/design-patterns/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns/design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction-to-java/introduction-to-java.iml" filepath="$PROJECT_DIR$/introduction-to-java/introduction-to-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction-to-jvm/introduction-to-jvm.iml" filepath="$PROJECT_DIR$/introduction-to-jvm/introduction-to-jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-intermediate/java-intermediate.iml" filepath="$PROJECT_DIR$/java-intermediate/java-intermediate.iml" />

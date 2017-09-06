@@ -9,12 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+
     <modules>
         <module>introduction-to-jvm</module>
         <module>introduction-to-java</module>
         <module>java-intermediate</module>
         <module>tdd</module>
-        <module>design-patterns</module>
+        <module>design-pattern</module>
     </modules>
 
     <!--Wlasiciwosci projektu - tutaj podajemy wersje zaleznosci, tak by byly skonfigurowane w jednym miejscu-->
