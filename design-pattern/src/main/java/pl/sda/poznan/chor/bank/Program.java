@@ -1,11 +1,8 @@
 package pl.sda.poznan.chor.bank;
 
-import org.junit.Test;
-
-public class PaymentTest {
-    @Test
-    public void test() {
-        Account account = new Account(8000d, 9876, 123456);
+public class Program {
+    public static void main(String[] args) {
+        Account account = new Account(8000d, 9876, 12345);
 
         Payment paypass = new PaypassPayment(account);
         Payment pinPayment = new PinPayment(account);
@@ -15,8 +12,9 @@ public class PaymentTest {
         pinPayment.setNextPayment(twoFactorPayment);
 
 //        paypass.processPayment(30d);
-//        paypass.processPayment(300d);
-        System.out.println(paypass.processPayment(3000d));
-
+//        boolean b = paypass.processPayment(300d);
+//        System.out.println(b);
+        boolean b1 = paypass.processPayment(3000d);
+        System.out.println(b1);
     }
 }

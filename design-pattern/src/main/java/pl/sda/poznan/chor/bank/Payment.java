@@ -26,7 +26,7 @@ public abstract class Payment {
         if (amount < getMaxAmount()) {
             return this.handlePayment(amount);
         } else if (nextPayment != null) {
-            return nextPayment.handlePayment(amount);
+            return nextPayment.processPayment(amount);
         }
         return false;
     }

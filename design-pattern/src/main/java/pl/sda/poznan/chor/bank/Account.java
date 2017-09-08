@@ -7,8 +7,10 @@ import lombok.Setter;
 @RequiredArgsConstructor
 public class Account {
 
+    public static final int PIN_LENGTH = 4;
+
     @Getter
-    private Double balance;
+    private Double balance = 0d;
 
     @Getter
     @Setter
@@ -19,6 +21,13 @@ public class Account {
     private String ownerName;
 
     private final int pin;
+    private final int token;
+
+    public Account(Double balance, int pin, int token) {
+        this.balance = balance;
+        this.pin = pin;
+        this.token = token;
+    }
 
     public boolean pay(Double amount) {
         if (this.balance >= amount) {
@@ -35,7 +44,18 @@ public class Account {
         return false;
     }
 
-    private boolean validate(int pin) {
-        return this.pin == pin;
+    public boolean validate(int pin) {
+        if (Integer.toString(pin).length() == PIN_LENGTH) {
+            return this.pin == pin;
+        }
+
+        return false;
+    }
+
+    public boolean pay(Double amount, int pin, int token) {
+        if (Integer.toString(token).length() == 6) {
+            return pay(amount);
+        }
+        return false;
     }
 }
