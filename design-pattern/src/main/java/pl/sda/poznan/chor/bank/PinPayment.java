@@ -19,7 +19,7 @@ public class PinPayment extends Payment {
     protected boolean handlePayment(Double amount) {
         System.out.println("Your pin: ");
         Scanner sc = new Scanner(System.in);
-        double v = sc.nextDouble();
-        return account.pay(amount, v);
+        int pinFromUser = sc.nextInt();
+        return account.pay(amount, pinFromUser);
     }
 }

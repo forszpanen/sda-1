@@ -4,8 +4,6 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-import java.util.Objects;
-
 @RequiredArgsConstructor
 public class Account {
 
@@ -38,6 +36,6 @@ public class Account {
     }
 
     private boolean validate(int pin) {
-        return Objects.equals(this.pin, pin);
+        return this.pin == pin;
     }
 }
