@@ -3,12 +3,12 @@ package pl.sda.poznan.observer;
 public class StockObserver extends Observer<Stock> {
 
     public StockObserver(Stock stock) {
-        this.t = stock;
-        this.t.attachObserver(this);
+        super(stock);
+        stock.attachObserver(this);
     }
 
     @Override
-    public void onChange(Object sender, PriceChangedEventArgs e) {
-        System.out.println("Price has changed!!! Old price " + e.getOldPrice() + " New price " + e.getNewPrice());
+    void onChange(Stock sender, PriceChangedEventArgs e) {
+        System.out.println("Cena sie zmienila: Stara cena: " + e.getOldPrice() + ", nowa cena: " + e.getNewPrice());
     }
 }

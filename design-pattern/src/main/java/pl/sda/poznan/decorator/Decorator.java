@@ -1,5 +1,5 @@
 package pl.sda.poznan.decorator;
 
-public abstract class Decorator extends Currency {
-    public abstract String getDescription();
+public interface Decorator extends Currency {
+
 }

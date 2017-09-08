@@ -1,8 +1,9 @@
 package pl.sda.poznan.facade;
 
 public class Circle implements Shape {
+
     @Override
     public void draw() {
-        System.out.println("Circle::draw()");
+        System.out.println("To jest kolo");
     }
 }

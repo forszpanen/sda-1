@@ -1,8 +1,12 @@
 package pl.sda.poznan.observer;
 
-public abstract class Observer<T> {
+abstract class Observer<T> {
+    private T observedObject;
 
-    protected T t;
+    Observer(T observedObject) {
+        this.observedObject = observedObject;
+    }
 
-    public abstract void onChange(Object sender, PriceChangedEventArgs e);
+    abstract void onChange(T sender, PriceChangedEventArgs e);
+
 }

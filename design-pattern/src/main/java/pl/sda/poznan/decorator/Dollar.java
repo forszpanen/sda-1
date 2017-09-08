@@ -1,16 +1,8 @@
 package pl.sda.poznan.decorator;
 
-public class Dollar extends Currency {
-
-    double value;
-
-    public Dollar() {
-        this.description = "Dollar";
-    }
-
+public class Dollar implements Currency {
     @Override
-    public double cost(double value) {
-        this.value = value;
-        return value;
+    public String getName() {
+        return "This is Dollar";
     }
 }

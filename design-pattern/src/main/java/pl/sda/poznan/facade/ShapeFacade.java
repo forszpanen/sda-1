@@ -3,23 +3,18 @@ package pl.sda.poznan.facade;
 public class ShapeFacade {
     private Shape circle;
     private Shape rectangle;
-    private Shape square;
+    private Shape sqaure;
+
 
     public ShapeFacade() {
         circle = new Circle();
         rectangle = new Rectangle();
-        square = new Square();
+        sqaure = new Square();
     }
 
-    public void drawCircle() {
+    public void drawAll() {
         circle.draw();
-    }
-
-    public void drawRectangle() {
         rectangle.draw();
-    }
-
-    public void drawSquare() {
-        square.draw();
+        sqaure.draw();
     }
 }
