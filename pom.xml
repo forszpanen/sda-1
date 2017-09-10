@@ -16,6 +16,7 @@
         <module>java-intermediate</module>
         <module>tdd</module>
         <module>design-pattern</module>
+        <module>commons</module>
     </modules>
 
     <!--Wlasiciwosci projektu - tutaj podajemy wersje zaleznosci, tak by byly skonfigurowane w jednym miejscu-->

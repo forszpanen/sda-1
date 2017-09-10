@@ -41,7 +41,8 @@ public class WorkerFacadeTest {
         kierownik.giveRaise();
         String reports = asystent.createReports();
 
-        JOptionPane.showMessageDialog(null, reports);
+//        Przyklad wyswietlenia okienka - przyklad fasady
+//        JOptionPane.showMessageDialog(null, reports);
 
     }
 
