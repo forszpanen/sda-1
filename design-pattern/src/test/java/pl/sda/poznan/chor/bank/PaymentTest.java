@@ -11,12 +11,12 @@ public class PaymentTest {
         Payment pinPayment = new PinPayment(account);
         Payment twoFactorPayment = new TwoFactorPayment(account);
 
-        paypass.setNextPayment(pinPayment);
-        pinPayment.setNextPayment(twoFactorPayment);
+//        paypass.setNextPayment(pinPayment);
+//        pinPayment.setNextPayment(twoFactorPayment);
 
 //        paypass.processPayment(30d);
 //        paypass.processPayment(300d);
-        System.out.println(paypass.processPayment(3000d));
+//        System.out.println(paypass.processPayment(3000d));
 
     }
 }
