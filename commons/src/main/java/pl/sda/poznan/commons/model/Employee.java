@@ -1,15 +1,15 @@
 package pl.sda.poznan.commons.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
-@AllArgsConstructor
+import java.io.Serializable;
+
+@Data
 @NoArgsConstructor
-public class Employee {
+@AllArgsConstructor
+public class Employee implements Serializable {
     private String name;
     private String surname;
     private int age;

@@ -1,6 +1,7 @@
 package pl.sda.poznan.chor;
 
 public class LoggerFacade {
+
     private static Logger info = new InfoLogger();
     private static Logger debug = new DebugLogger();
     private static Logger error = new ErrorLogger();

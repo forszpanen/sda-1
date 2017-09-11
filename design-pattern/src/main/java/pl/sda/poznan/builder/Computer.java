@@ -6,6 +6,9 @@ public class Computer {
     private String ram;
     private String hdd;
     private String mainboard;
+    private String testField;
+
+    private static String staticTestFiled;
 
     public Computer(String processor, String ram, String hdd, String mainboard) {
         this.processor = processor;
@@ -54,6 +57,10 @@ public class Computer {
 
         public ComputerBuilder() {
 
+        }
+
+        public void test() {
+            staticTestFiled = "as";
         }
 
         public ComputerBuilder addProcessor(String processor) {

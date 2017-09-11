@@ -1,9 +1,8 @@
 package streams;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class StreamsPlayground {
@@ -33,6 +32,12 @@ public class StreamsPlayground {
                 .collect(Collectors.toList());
         System.out.println(gList.size());
 
+
+        //Stream any
+
+        List<String> strings = Arrays.asList("Ala", "ma", "kota");
+        Optional<String> d = strings.stream().filter(s -> s.startsWith("D")).findAny();
+        String s = d.orElseThrow(IllegalArgumentException::new);
 
 
     }
