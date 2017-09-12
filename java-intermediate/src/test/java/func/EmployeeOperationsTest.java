@@ -1,9 +1,11 @@
 package func;
 
 import org.junit.Test;
+import pl.sda.poznan.commons.model.Address;
 import pl.sda.poznan.commons.model.Employee;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -32,6 +34,36 @@ public class EmployeeOperationsTest {
         List<Employee> result = employeeStream1.collect(Collectors.toList());
 
         System.out.println(result.size());
+    }
+
+    @Test
+    public void mapTest() {
+        List<Employee> employees = new ArrayList<>();
+
+        Address jackAddress = new Address("30", "os. Jagiellońskie", "Poznan", "61-229");
+        Employee jack = new Employee("Piotr", "Kowal", 20, 2500, jackAddress);
+
+
+        Address johnAddress = new Address("544", "Dluga", "Wroclaw", "89-800");
+        Employee john = new Employee("Piotr", "Nowak", 25, 3500, johnAddress);
+
+        employees.add(jack);
+        employees.add(john);
+
+//        List<Address> ...
+        List<Address> p1 = employees.stream()
+                .map(employee -> employee.getAddress())
+                .filter(address -> address.getStreet().startsWith("P"))
+                .collect(Collectors.toList());
+
+    }
+
+    @Test
+    public void anotherMapExample() {
+        List<String> strings = Arrays.asList("Piotr", "Pawel", "Jan", "Aga");
+
+        List<String> collect = strings.stream().map(s -> s.toLowerCase()).collect(Collectors.toList());
+
     }
 
 }
