@@ -20,6 +20,8 @@ public class StringUtilsTest {
         List<String> collect = flatStream.collect(Collectors.toList());
         collect.forEach(System.out::println);
 
+
+
     }
 
 }
