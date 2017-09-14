@@ -10,6 +10,7 @@ public class ArrayAsync {
     private final Object locker = new Object();
 
 
+
     public ArrayAsync(double[] array, int THREADS_COUNT) {
         this.array = array;
         this.THREADS_COUNT = THREADS_COUNT;
